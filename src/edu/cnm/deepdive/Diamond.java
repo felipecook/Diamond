@@ -22,10 +22,21 @@ interface Branch2 extends Root {
 
 public class Diamond implements Branch1, Branch2 {
 
+
   @Override
   public void doSomething() {
     // HOW CAN WE DO THE FOLLOWING??
     // Branch2.doSomething();
+
+  }
+
+  public static void main(String[] args) {
+    Branch2 testClass = new Diamond();
+    Branch2.doSomething();
   }
 
 }
+
+
+
+
